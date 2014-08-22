@@ -1,5 +1,9 @@
 # Web Applications
 
+- The internet is barely 50 years old, and the web just 25.
+- Dominant designs are just emerging
+- Now laying the foundation for the future of computing and technology.
+
 ## What is web
 - Client/Server
 - HTTP
