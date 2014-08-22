@@ -71,8 +71,8 @@
 - smaller request payloads (no formatting/styling, no tags)
 - asynchronous
 - seamless, animated, responsive experience
-- complex applications
-- treat front-end and back-end as separate, independent applications
+- complex, event-driven applications
+- treat front-end and back-end as separate, independent
 - apply engineering principles on front-end
 
 ## Modern web development
@@ -107,6 +107,7 @@
 - automated unit/integration testing, test tools
 - build tools (compilation, minification)
 - preprocessors (LESS/SASS, CoffeeScript, etc)
+- packaging systems, repos
 - dep management
 
 ### Back-End
@@ -123,7 +124,7 @@
 
 - infinite supply of cheap commodity servers
 - no hardware pains
-- pay-on-demand (cloud)
+- aaS, pay-on-demand (cloud/VPS)
 - scripted, automated provisioning, configuration and bootstrapping
 
 ##### DevOps
@@ -131,7 +132,13 @@
 - infrastructure as code
 - high scalability, etc. problems abstracted from application
 
-### Software as a Service
+##### Platform as a Service
+
+- provide platform for application (containers, environments, etc)
+- abstract infrastructure away
+- google app engine, heroku
+
+**Software as a Service**
 
 ## Application Stack
 
@@ -143,9 +150,16 @@
 - database(s)
 - cache/key-value (memcached, redis)
 - http cache (varnish)
-- load balancers/proxy (haproxy)
-- messaging, queues, workers (rabbitmq, celery)
 - full-text search (elasticsearch, solr, lucene)
+
+## Infrastructure
+
+- load balancers/proxy (haproxy)
+- application server(s)
+- static content server/CDN
+- database server(s)
+- messaging, queues, workers (rabbitmq, celery)
+- log server (logstash)
 
 
 ## Web Frameworks
@@ -156,8 +170,11 @@
 - provide all/most components to build full-fledge web application in one place
 - try to solve all of the common problems/tasks of web development
 - opinionated about architecture, component structure, application design
-- highly productive, maintainable
+- highly productive
+-  maintainable, understandable
 - usually include several tools
+- many popular ones based on traditional, html-based request-response-reload
+- not necessarily monolithic
 
 #### Routers
 - map requests & data to controller actions
@@ -197,10 +214,12 @@
 - range from lightweight/minimal (backbone) to full featured, opinionated (angular)
 
 ## Angular
-- declaritive approach w. custom html tags/attributes
-- correspond to directives, the under-the-hood functionality, which leverage templates to generate html
+- heroic, all-in-one, productive framework
+- *declaritive* approach w. custom html tags/attributes
+- correspond to *directives*, under-the-hood functionality which leverage templates to generate html
 - automatic 2-way data binding between DOM and models
+- factories for services (very similar to hibernate beans)
 - dependency injection
-- routing
+- URL routing
 - controllers
-- "resources" (models w. REST integration
+- "resources" (models w. REST integration)
