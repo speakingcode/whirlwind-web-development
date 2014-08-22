@@ -1,14 +1,15 @@
-# Web Applications
+# What is Web Development
 
 - The internet is less than 50 years old, and the web just 25.
 - Dominant designs are just emerging
 - Now laying the foundation for the future of computing and technology.
 
-## What is web
+## What is web?
 - Client/Server
 - HTTP
 - Browser
 - HTML/CSS/JavaScript
+- Collection internet-enabled applications and services
 
 **REST** (Representational State Transfer) is an architectural approach that represents stateful resources in a stateless client-server environment.
 - The worldwide web is a REST architecture
